@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Tables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            text-align: center;
+        }
+        th {
+            background-color: pink;
+            color: white;
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        /* Styling for Table 1 */
+        table.info th {
+            background-color: lightgreen; 
+        }
+
+        table.info td:first-child {
+            background-color: lightyellow; 
+        }
+
+        table.roll th{
+            background-color: rgb(73, 44, 6);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Table 1: Basic Information -->
+    <table class="info">
+        <caption>Basic Information</caption>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Farhan</td>
+            <td>20</td>
+            <td>Female</td>
+            <td>Rajshahi</td>
+        </tr>
+        <tr>
+            <td>Rubina</td>
+            <td>25</td>
+            <td>Female</td>
+            <td>Khulna</td>
+        </tr>
+        <tr>
+            <td>Samoly</td>
+            <td>35</td>
+            <td>Female</td>
+            <td>Dhaka</td>
+        </tr>
+        <tr>
+            <td>Sakila</td>
+            <td>30</td>
+            <td>Female</td>
+            <td>Barisal</td>
+        </tr>
+    </table>
+
+    <!-- Table 2: Mark sheet -->
+    <table>
+        <caption>Result</caption>
+        <tr>
+            <th>Subject</th>
+            <th>Marks Obtained</th>
+            <th>Total Marks</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Mathematics</td>
+            <td>88</td>
+            <td>100</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>76</td>
+            <td>100</td>
+            <td>B+</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>90</td>
+            <td>100</td>
+            <td>A+</td>
+        </tr>
+        <tr>
+            <td>Social Studies</td>
+            <td>85</td>
+            <td>100</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Computer Science</td>
+            <td>92</td>
+            <td>100</td>
+            <td>A+</td>
+        </tr>
+        <tr>
+            <td colspan="2">Total Marks Obtained: 88 + 76 + 90 + 85 + 92 = 431</td>
+            <td colspan="2">The Grade=A</td>
+        </tr>
+    </table>
+
+    <!-- Table 3:Roll Call sheet -->
+    <table class="roll">
+        <caption>Roll call sheet</caption>
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+           <th> 1/11/2024</th>
+
+            
+        </tr>
+        <tr>
+            <td>Farhana</td>
+            <td>Mathematics</td>
+            <td>Present</td>
+            
+           
+        </tr>
+        <tr>
+            <td>Rubina</td>
+            <td>Mathematics</td>
+            <td>Absent</td>
+        </tr>
+        <tr>
+            <td>Samoly</td>
+            <td>Mathematics</td>
+            <td>Present</td>
+        </tr>
+        <tr>
+            <td>Sakila</td>
+            <td>Mathematics</td>
+           <td>Absent</td>
+        </tr>
+    </table>
+
+    <!-- Table 4: Flight Schedule -->
+    <table>
+        <caption>Flight Schedule</caption>
+        <tr>
+            <th>Flight Number</th>
+            <th>Departure</th>
+            <th>Destination</th>
+            <th>Time</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>AI-101</td>
+            <td>New York</td>
+            <td>London</td>
+            <td>10:00 AM</td>
+            <td>On Time</td>
+        </tr>
+        <tr>
+            <td>BA-203</td>
+            <td>Paris</td>
+            <td>Dubai</td>
+            <td>1:30 PM</td>
+            <td>Delayed</td>
+        </tr>
+        <tr>
+            <td>EK-305</td>
+            <td>Dubai</td>
+            <td>Singapore</td>
+            <td>6:00 PM</td>
+            <td>On Time</td>
+        </tr>
+    </table>
+
+    <!-- Table 5: Employee Attendance -->
+    <table>
+        <caption>Infomation</caption>
+        <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Harish</td>
+            <td>haris12@gmail.com</td>
+            <td>20000</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>paul</td>
+            <td>paul@gamil.com</td>
+            <td>50000</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Mark Taylor</td>
+            <td>mark@gmail.com</td>
+            <td>40000</td>
+        </tr>
+    </table>
+
+</body>
+</html>
